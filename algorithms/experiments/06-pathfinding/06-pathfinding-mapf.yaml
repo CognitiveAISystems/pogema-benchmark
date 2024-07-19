@@ -1,0 +1,37 @@
+environment:
+  name: Environment
+  with_animation: False
+  on_target: 'nothing'
+  max_episode_steps: 2048
+  observation_type: 'MAPF'
+  collision_system: 'soft'
+  #obs_radius: 4
+  seed:
+    grid_search: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+  num_agents: 1
+  map_name:
+    grid_search: [ Berlin_1_256, Boston_0_256, London_2_256, 
+                   Milan_0_256, Moscow_0_256, 
+                   NewYork_1_256, Paris_1_256, Paris_2_256,]
+
+algorithms:
+  #DCC:  # requires obs_radius: 4 in environment
+  #  name: DCC
+  LaCAM:
+    name: LaCAM
+  Follower:
+    name: Follower
+  RHCR:
+    name: RHCR
+  MATS-LP:
+    name: MATS-LP
+  SCRIMP:
+    name: SCRIMP
+  
+
+
+results_views:
+  TabularView1:
+    type: tabular
+    drop_keys: [ seed, map_name ]
+    print_results: True
