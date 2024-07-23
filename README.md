@@ -72,3 +72,17 @@ python eval.py
 │   ├── Similar categorization with specific map evaluations
 └── README.md
 ```
+
+## Citation
+If you use this repository in your research or wish to cite it, please make a reference to our paper: 
+```
+@misc{skrynnik2024pogema,
+      title={POGEMA: A Benchmark Platform for Cooperative Multi-Agent Navigation}, 
+      author={Alexey Skrynnik and Anton Andreychuk and Anatolii Borzilov and Alexander Chernyavskiy and Konstantin Yakovlev and Aleksandr Panov},
+      year={2024},
+      eprint={2407.14931},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2407.14931}, 
+}
+```
