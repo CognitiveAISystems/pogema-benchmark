@@ -40,7 +40,12 @@ Explore integrated algorithms located in the `algorithms` directory:
   ```bash
   cd docker && sh build.sh
   ```
-The following table contains links to the original repositories of all the integrated aproaches:
+  MAMBA baseline requires a separate Docker image:
+  ```bash
+  cd docker/mamba && sh build.sh
+  ```
+  
+The following table contains links to the original repositories of all the integrated approaches:
 
 | Approach  | Link |
 |-----------|------|
@@ -50,6 +55,7 @@ The following table contains links to the original repositories of all the integ
 | MATS-LP   | [https://github.com/AIRI-Institute/mats-lp](https://github.com/AIRI-Institute/mats-lp) |
 | RHCR      | [https://github.com/Jiaoyang-Li/RHCR](https://github.com/Jiaoyang-Li/RHCR) |
 | SCRIMP    | [https://github.com/marmotlab/SCRIMP](https://github.com/marmotlab/SCRIMP) |
+| MAMBA     | [https://github.com/jbr-ai-labs/mamba](https://github.com/jbr-ai-labs/mamba) |
 
 
 ## Evaluation
