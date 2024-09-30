@@ -1,15 +1,16 @@
 environment:
   name: Environment
-  with_animation: False
-  on_target: 'nothing'
-  max_episode_steps: 128
-  observation_type: 'MAPF'
-  collision_system: 'soft'
-  seed: 0
-  num_agents:
-    grid_search: [ 8, 16, 24, 32, 48, 64 ]
-  map_name:
-    grid_search: [
+  grid_config:
+    with_animation: False
+    on_target: 'nothing'
+    max_episode_steps: 128
+    observation_type: 'MAPF'
+    collision_system: 'soft'
+    seed: 0
+    num_agents:
+      grid_search: [ 8, 16, 24, 32, 48, 64 ]
+    map_name:
+      grid_search: [
         validation-mazes-seed-000, validation-mazes-seed-001, validation-mazes-seed-002, 
         validation-mazes-seed-003, validation-mazes-seed-004, validation-mazes-seed-005, 
         validation-mazes-seed-006, validation-mazes-seed-007, validation-mazes-seed-008, 
@@ -53,44 +54,33 @@ environment:
         validation-mazes-seed-120, validation-mazes-seed-121, validation-mazes-seed-122, 
         validation-mazes-seed-123, validation-mazes-seed-124, validation-mazes-seed-125, 
         validation-mazes-seed-126, validation-mazes-seed-127
-    ]
+        ]
 
 algorithms:
-  LaCAM:
-    name: LaCAM
-  # MAMBA:
-  #  name: Follower
-  #  num_process: 4
-  #SCRIMP:
-  #  name: SCRIMP
+  IQL:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/iql
+  VDN:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/vdn
+  QMIX:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/qmix
+  QPLEX:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/qplex
 
 
 results_views:
   TabularView1:
     type: tabular
-    drop_keys: [ seed, map_name ]
+    drop_keys: [ seed, map_name, ISR, CSR, ep_length, SoC, makespan, runtime, avg_agents_density ]
     print_results: True
-
-  02-mazes-SoC:
-    name: Mazes $20\times20$
-    type: plot
-    x: num_agents
-    y: SoC
-    width: 2.5
-    height: 2.5
-    line_width: 2
-    use_log_scale_x: True
-    legend_font_size: 8
-    font_size: 8
-
-  02-mazes-CSR:
-    name: Mazes
-    type: plot
-    x: num_agents
-    y: CSR
-    width: 2.5
-    height: 2.5
-    line_width: 2
-    use_log_scale_x: True
-    legend_font_size: 8
-    font_size: 8

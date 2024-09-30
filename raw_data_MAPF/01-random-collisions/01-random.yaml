@@ -1,15 +1,16 @@
 environment:
   name: Environment
-  with_animation: False
-  on_target: 'nothing'
-  max_episode_steps: 128
-  observation_type: 'MAPF'
-  collision_system: 'soft'
-  seed: 0
-  num_agents:
-    grid_search: [ 8, 16, 24, 32, 48, 64 ]
-  map_name:
-    grid_search: [
+  grid_config:
+    with_animation: False
+    on_target: 'nothing'
+    max_episode_steps: 128
+    observation_type: 'MAPF'
+    collision_system: 'soft'
+    seed: 0
+    num_agents:
+      grid_search: [ 8, 16, 24, 32, 48, 64 ]
+    map_name:
+      grid_search: [
         validation-random-seed-000, validation-random-seed-001, validation-random-seed-002, 
         validation-random-seed-003, validation-random-seed-004, validation-random-seed-005, 
         validation-random-seed-006, validation-random-seed-007, validation-random-seed-008, 
@@ -53,51 +54,34 @@ environment:
         validation-random-seed-120, validation-random-seed-121, validation-random-seed-122, 
         validation-random-seed-123, validation-random-seed-124, validation-random-seed-125, 
         validation-random-seed-126, validation-random-seed-127
-    ]
+      ]
 
 algorithms:
-  LaCAM:
-    name: LaCAM
-  # MAMBA:
-  #  name: Follower
-  #  num_process: 4
-  #SCRIMP:
-  #  name: SCRIMP
+  IQL:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/iql
+    # parallel_backend: 'sequential'
+  VDN:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/vdn
+  QMIX:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/qmix
+  QPLEX:
+    name: Pymarl
+    num_process: 6
+    device: cuda
+    path_to_weights: pymarl/single-shot/qplex
 
 
 results_views:
   TabularView1:
     type: tabular
-    drop_keys: [ seed, map_name ]
+    drop_keys: [ seed, map_name, ISR, CSR, ep_length, SoC, makespan, runtime, avg_agents_density ]
     print_results: True
-
-  01-random-mazes-SoC:
-    type: plot
-    x: num_agents
-    y: SoC
-    width: 2.5
-    height: 2.5
-    line_width: 2
-    use_log_scale_x: True
-    legend_font_size: 8
-    font_size: 8
-    name: Random / Mazes
-    ticks: [8, 16, 24, 32, 48, 64]
-
-  01-random-mazes-CSR:
-    type: plot
-    x: num_agents
-    y: CSR
-    width: 2.5
-    height: 2.5
-    line_width: 2
-    use_log_scale_x: True
-    legend_font_size: 8
-    font_size: 8
-    name: Random
-#    ticks: [8, 16, 24, 32, 48, 64]
-#
-#  TabularAll:
-#    type: tabular
-#    drop_keys: [ seed ]
-#    print_results: True
