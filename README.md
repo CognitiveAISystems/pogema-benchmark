@@ -14,15 +14,17 @@ This repository is organized into several key areas:
 ## Installation
 
 ### POGEMA Environment
-Install the POGEMA environment using pip:
+Install the POGEMA environment:
 ```bash
-pip3 install pogema
+cd pogema
+python setup.py install
 ```
 
 ### POGEMA Toolbox
 Install additional tools for POGEMA:
 ```bash
-pip3 install pogema-toolbox
+cd pogema-toolbox
+python setup.py install
 ```
 
 ### Algorithms
