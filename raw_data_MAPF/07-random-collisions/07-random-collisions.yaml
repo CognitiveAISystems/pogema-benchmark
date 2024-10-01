@@ -83,5 +83,16 @@ algorithms:
 results_views:
   TabularView1:
     type: tabular
-    drop_keys: [ seed, map_name, avg_throughput, runtime, avg_agents_density, avg_num_agents_in_obs]
+    drop_keys: [ seed, map_name, ISR, CSR, ep_length, SoC, makespan, runtime, avg_agents_density ]
     print_results: True
+  07-collisions-random:
+    type: plot
+    x: num_agents
+    y: Collisions
+    width: 2.5
+    height: 2.2
+    line_width: 2
+    use_log_scale_x: True
+    legend_font_size: 7
+    font_size: 8
+    name: Random

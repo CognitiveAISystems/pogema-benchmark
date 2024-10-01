@@ -40,7 +40,7 @@ def get_combined_df(dataset, path):
         elif dataset == '03-warehouse':
             combined_df = pd.merge(combined_df, df, on=['env_grid_search.num_agents', 'env_grid_search.seed'],
                                    suffixes=('', '_dup'))
-        elif dataset in ['01-random', '02-mazes', '04-movingai', '01-random-collisions', '02-mazes-collisions']:
+        elif dataset in ['01-random', '02-mazes', '04-movingai', '07-random-collisions', '07-mazes-collisions']:
             combined_df = pd.merge(combined_df, df, on=['env_grid_search.num_agents', 'env_grid_search.map_name'],
                                    suffixes=('', '_dup'))
         elif dataset in ['06-pathfinding']:
@@ -250,7 +250,7 @@ def main():
         ignore_index=True))
     add_pathfinding(data_dict, algos, get_combined_df('06-pathfinding', path_to_results))
     add_coordination(data_dict, algos, pd.concat(
-        [get_combined_df('01-random-collisions', path_to_results), get_combined_df('02-mazes-collisions', path_to_results)],
+        [get_combined_df('07-random-collisions', path_to_results), get_combined_df('07-mazes-collisions', path_to_results)],
         ignore_index=True))
 
     for algo in algos:

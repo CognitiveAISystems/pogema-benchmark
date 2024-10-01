@@ -79,7 +79,7 @@ results_views:
     height: 2.5
     line_width: 2
     use_log_scale_x: True
-    legend_font_size: 8
+    legend_font_size: 7
     font_size: 8
     name: Random / Mazes
     ticks: [8, 16, 24, 32, 48, 64]
@@ -92,9 +92,9 @@ results_views:
     height: 2.5
     line_width: 2
     use_log_scale_x: True
-    legend_font_size: 8
+    legend_font_size: 7
     font_size: 8
-    name: Random
+    name: Random / Mazes
 #    ticks: [8, 16, 24, 32, 48, 64]
 #
 #  TabularAll:
