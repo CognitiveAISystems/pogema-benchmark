@@ -15,7 +15,7 @@
       "seed": 0,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -33,7 +33,7 @@
       "seed": 0,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -51,7 +51,7 @@
       "seed": 0,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -69,7 +69,7 @@
       "seed": 0,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -87,7 +87,7 @@
       "seed": 0,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -105,7 +105,7 @@
       "seed": 0,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -123,7 +123,7 @@
       "seed": 0,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -141,7 +141,7 @@
       "seed": 0,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -159,7 +159,7 @@
       "seed": 1,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -177,7 +177,7 @@
       "seed": 1,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -195,7 +195,7 @@
       "seed": 1,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -213,7 +213,7 @@
       "seed": 1,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -231,7 +231,7 @@
       "seed": 1,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -249,7 +249,7 @@
       "seed": 1,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -267,7 +267,7 @@
       "seed": 1,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -285,7 +285,7 @@
       "seed": 1,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -303,7 +303,7 @@
       "seed": 2,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -321,7 +321,7 @@
       "seed": 2,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -339,7 +339,7 @@
       "seed": 2,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -357,7 +357,7 @@
       "seed": 2,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -375,7 +375,7 @@
       "seed": 2,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -393,7 +393,7 @@
       "seed": 2,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -411,7 +411,7 @@
       "seed": 2,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -429,7 +429,7 @@
       "seed": 2,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -447,7 +447,7 @@
       "seed": 3,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -465,7 +465,7 @@
       "seed": 3,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -483,7 +483,7 @@
       "seed": 3,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -501,7 +501,7 @@
       "seed": 3,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -519,7 +519,7 @@
       "seed": 3,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -537,7 +537,7 @@
       "seed": 3,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -555,7 +555,7 @@
       "seed": 3,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -573,7 +573,7 @@
       "seed": 3,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -591,7 +591,7 @@
       "seed": 4,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -609,7 +609,7 @@
       "seed": 4,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -627,7 +627,7 @@
       "seed": 4,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -645,7 +645,7 @@
       "seed": 4,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -663,7 +663,7 @@
       "seed": 4,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -681,7 +681,7 @@
       "seed": 4,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -699,7 +699,7 @@
       "seed": 4,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -717,7 +717,7 @@
       "seed": 4,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -735,7 +735,7 @@
       "seed": 5,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -753,7 +753,7 @@
       "seed": 5,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -771,7 +771,7 @@
       "seed": 5,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -789,7 +789,7 @@
       "seed": 5,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -807,7 +807,7 @@
       "seed": 5,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -825,7 +825,7 @@
       "seed": 5,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -843,7 +843,7 @@
       "seed": 5,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -861,7 +861,7 @@
       "seed": 5,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -879,7 +879,7 @@
       "seed": 6,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -897,7 +897,7 @@
       "seed": 6,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -915,7 +915,7 @@
       "seed": 6,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -933,7 +933,7 @@
       "seed": 6,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -951,7 +951,7 @@
       "seed": 6,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -969,7 +969,7 @@
       "seed": 6,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -987,7 +987,7 @@
       "seed": 6,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1005,7 +1005,7 @@
       "seed": 6,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1023,7 +1023,7 @@
       "seed": 7,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1041,7 +1041,7 @@
       "seed": 7,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1059,7 +1059,7 @@
       "seed": 7,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1077,7 +1077,7 @@
       "seed": 7,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1095,7 +1095,7 @@
       "seed": 7,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1113,7 +1113,7 @@
       "seed": 7,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1131,7 +1131,7 @@
       "seed": 7,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1149,7 +1149,7 @@
       "seed": 7,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1167,7 +1167,7 @@
       "seed": 8,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1185,7 +1185,7 @@
       "seed": 8,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1203,7 +1203,7 @@
       "seed": 8,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1221,7 +1221,7 @@
       "seed": 8,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1239,7 +1239,7 @@
       "seed": 8,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1257,7 +1257,7 @@
       "seed": 8,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1275,7 +1275,7 @@
       "seed": 8,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1293,7 +1293,7 @@
       "seed": 8,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1311,7 +1311,7 @@
       "seed": 9,
       "map_name": "Berlin_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1329,7 +1329,7 @@
       "seed": 9,
       "map_name": "Boston_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1347,7 +1347,7 @@
       "seed": 9,
       "map_name": "London_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1365,7 +1365,7 @@
       "seed": 9,
       "map_name": "Milan_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1383,7 +1383,7 @@
       "seed": 9,
       "map_name": "Moscow_0_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1401,7 +1401,7 @@
       "seed": 9,
       "map_name": "NewYork_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1419,7 +1419,7 @@
       "seed": 9,
       "map_name": "Paris_1_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   },
   {
     "metrics": {
@@ -1437,6 +1437,6 @@
       "seed": 9,
       "map_name": "Paris_2_256"
     },
-    "algorithm": "VDN-tuned"
+    "algorithm": "VDN"
   }
 ]
