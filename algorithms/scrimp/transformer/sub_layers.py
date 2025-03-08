@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from algorithms.scrimp.transformer.modules import ScaledDotProductAttention
+from scrimp.transformer.modules import ScaledDotProductAttention
 
 
 # from scrimp.transformer.modules import ScaledDotProductAttention

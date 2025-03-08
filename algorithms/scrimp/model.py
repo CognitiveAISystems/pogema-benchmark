@@ -5,8 +5,8 @@ import torch.optim as optim
 from torch.cuda.amp.autocast_mode import autocast
 from torch.cuda.amp.grad_scaler import GradScaler
 
-from algorithms.scrimp.alg_parameters import TrainingParameters, IntrinsicParameters, EnvParameters, NetParameters
-from algorithms.scrimp.net import SCRIMPNet
+from scrimp.alg_parameters import TrainingParameters, IntrinsicParameters, EnvParameters, NetParameters
+from scrimp.net import SCRIMPNet
 
 
 class Model(object):

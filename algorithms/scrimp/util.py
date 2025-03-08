@@ -3,7 +3,7 @@ import random
 import numpy as np
 import torch
 
-from algorithms.scrimp.alg_parameters import NetParameters, EnvParameters
+from scrimp.alg_parameters import NetParameters, EnvParameters
 
 
 def set_global_seeds(i):

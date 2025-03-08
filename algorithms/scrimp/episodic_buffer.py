@@ -2,7 +2,7 @@ import random
 
 import numpy as np
 
-from algorithms.scrimp.alg_parameters import IntrinsicParameters
+from scrimp.alg_parameters import IntrinsicParameters
 
 
 # from scrimp.alg_parameters import *

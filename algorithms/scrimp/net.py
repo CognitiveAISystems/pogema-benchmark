@@ -4,8 +4,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.cuda.amp.autocast_mode import autocast
 
-from algorithms.scrimp.alg_parameters import NetParameters, EnvParameters
-from algorithms.scrimp.transformer.encoder_model import TransformerEncoder
+from scrimp.alg_parameters import NetParameters, EnvParameters
+from scrimp.transformer.encoder_model import TransformerEncoder
 
 
 def normalized_columns_initializer(weights, std=1.0):
