@@ -7,7 +7,10 @@ from torch.cuda.amp.grad_scaler import GradScaler
 
 from scrimp.alg_parameters import TrainingParameters, IntrinsicParameters, EnvParameters, NetParameters
 from scrimp.net import SCRIMPNet
+from scrimp.util import set_global_seeds
+from scrimp.alg_parameters import *
 
+set_global_seeds(SetupParameters.SEED)
 
 class Model(object):
     """model0 of agents"""
