@@ -20,6 +20,8 @@ def load_and_normalize_json(file_path):
 
 def add_algorithm_prefix(df):
     algorithm_name = df['algorithm'].iloc[0]
+    if "tuned" in algorithm_name:
+        algorithm_name = algorithm_name.replace("-tuned", "")
     metric_columns = [col for col in df.columns if col.startswith('metrics.')]
     new_column_names = {col: f"{algorithm_name}_{col.split('.')[-1]}" for col in metric_columns}
     df.rename(columns=new_column_names, inplace=True)
@@ -39,7 +41,7 @@ def get_combined_df(dataset, path):
         elif dataset == '03-warehouse':
             combined_df = pd.merge(combined_df, df, on=['env_grid_search.num_agents', 'env_grid_search.seed'],
                                    suffixes=('', '_dup'))
-        elif dataset in ['01-random', '02-mazes', '04-movingai']:
+        elif dataset in ['01-random', '02-mazes', '04-movingai', '07-random-collisions', '07-mazes-collisions']:
             combined_df = pd.merge(combined_df, df, on=['env_grid_search.num_agents', 'env_grid_search.map_name'],
                                    suffixes=('', '_dup'))
         elif dataset in ['06-pathfinding']:
@@ -138,17 +140,34 @@ def add_performance(data_dict, algos, combined_df):
 
 
 def add_pathfinding(data_dict, algos, combined_df):
-    results = {algo: 0 for algo in algos}
+    results = {algo: [] for algo in algos}
     for index, row in combined_df.iterrows():
         values = []
         for algo in algos:
             values.append(row[f'{algo}_ep_length'])
         best_value = min(values)
         for algo in algos:
-            results[algo] += row[f'{algo}_ep_length'] == best_value
+            if row[f'{algo}_ep_length'] > 0:
+                results[algo].append(best_value/row[f'{algo}_ep_length'])
+            else:
+                results[algo].append(0)
     for algo in algos:
-        data_dict[algo]['Pathfinding'] = results[algo] / len(combined_df)
+        data_dict[algo]['Pathfinding'] = np.array(results[algo]).mean()
 
+def add_coordination(data_dict, algos, combined_df):
+    results = {algo: 0 for algo in algos}
+
+    for algo in algos:
+        values = []
+        if f'{algo}_a_collisions' in combined_df.columns:   
+            for index, row in combined_df.iterrows():
+                values.append((row[f'{algo}_a_collisions'] + row[f'{algo}_o_collisions']) / (256 * row['env_grid_search.num_agents']))
+            results[algo] = np.array(values).mean()
+        else:
+            print(f'{algo} does not have collision data')
+    print(combined_df.columns)
+    for algo in algos:
+        data_dict[algo]['Coordination'] = 1 - results[algo]
 
 def smooth_between_pairs(scores, angles):
     scores = np.array(scores)
@@ -208,19 +227,21 @@ def main():
     # algos = ['RHCR', 'Follower', 'MAMBA', 'IQL', 'VDN', 'QMIX', 'QPLEX', 'ASwitcher', 'HSwitcher', 'LSwitcher', 'EPOM',
     #          'RePlan', 'MATS-LP']
     algos = ['RHCR', 'Follower', 'MAMBA', 'IQL', 'VDN', 'QMIX', 'QPLEX', 'ASwitcher', 'LSwitcher', 'MATS-LP']
-    labels = ['Scalability', 'Pathfinding', 'Congestion', 'Cooperation', 'Out-of-Distribution', 'Performance']
+    labels = ['Scalability', 'Pathfinding', 'Cooperation', 'Out-of-Distribution', 'Performance', 'Coordination']
     centralized = ['RHCR']
 
     data_dict = {algo: {} for algo in algos}
     add_coopeartion(data_dict, algos, get_combined_df('05-puzzles', path_to_results))
     add_scalability(data_dict, algos, get_combined_df('03-warehouse', path_to_results))
-    add_congestion(data_dict, algos, get_combined_df('03-warehouse', path_to_results),
-                   f'{path_to_results}/03-warehouse')
+    #add_congestion(data_dict, algos, get_combined_df('03-warehouse', path_to_results), f'{path_to_results}/03-warehouse')
     add_out_of_distribution(data_dict, algos, get_combined_df('04-movingai', path_to_results))
     add_performance(data_dict, algos, pd.concat(
         [get_combined_df('01-random', path_to_results), get_combined_df('02-mazes', path_to_results)],
         ignore_index=True))
     add_pathfinding(data_dict, algos, get_combined_df('06-pathfinding', path_to_results))
+    add_coordination(data_dict, algos, pd.concat(
+        [get_combined_df('07-random-collisions', path_to_results), get_combined_df('07-mazes-collisions', path_to_results)],
+        ignore_index=True))
     for algo in algos:
         print(algo, data_dict[algo])
 

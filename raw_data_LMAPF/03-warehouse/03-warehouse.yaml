@@ -41,8 +41,8 @@ results_views:
     type: plot
     x: num_agents
     y: runtime
-    width: 3.5
-    height: 3
+    width: 3.2
+    height: 2.6
     line_width: 2
     use_log_scale_x: False
     use_log_scale_y: True
