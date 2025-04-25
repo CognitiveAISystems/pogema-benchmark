@@ -80,3 +80,14 @@ python eval.py
 └── README.md
 ```
 
+## Citation
+If you use this repository in your research or wish to cite it, please make a reference to our paper: 
+```
+@inproceedings{skrynnik2025pogema,
+  title={POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding},
+  author={Skrynnik, Alexey and Andreychuk, Anton and Borzilov, Anatolii and Chernyavskiy, Alexander and Yakovlev, Konstantin and Panov, Aleksandr},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025}
+}
+```
+
